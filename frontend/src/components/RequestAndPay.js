@@ -35,7 +35,7 @@ function RequestAndPay({}) {
         hidePayModal();   
     }}
     onCancel={hidePayModal} 
-    okText ="Procedd To Pay"
+    okText ="Pay a Request"
     cancelText= "Cancel"
     >
     </Modal>
@@ -47,8 +47,8 @@ function RequestAndPay({}) {
         hideRequestModal();
     }}
     onCancel={hideRequestModal}
-    okText="Proceed To Request"
-    cancelText="Cancel"
+    okText="Request a Payment"
+    cancelText="Cancel" 
     >
     <p>Amount (Matic)</p>
     <InputNumber value={requestAmount} onChange={(val)=> setRequestAmount(val)} />
