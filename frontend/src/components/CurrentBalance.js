@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card} from "antd";
 
-const CurrentBalance = () => {
+function CurrentBalance ({}) {
   return (
    <Card title="Current Balance" style={{Width: "100%"}}>
     <div className='currentBalance'>
