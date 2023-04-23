@@ -33,6 +33,7 @@ app.get("/getNameAndBalance", async (req,res) =>{
         abi: ABI,
         params: {_user: userAddress},
     })
+    
     const jsonResponseName = response.raw;
 
     const secResponse = await Moralis.EvmApi.balance.getNativeBalance({

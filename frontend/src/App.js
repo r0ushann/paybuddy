@@ -48,8 +48,7 @@ function App() {
     setBalance(String(response.balance));
     setDollars(String(response.dollars));
     setHistory(response.history);
-    setRequests(response.requests);
-    
+    setRequests(response.requests);  
   }
 
   useEffect(() => {
@@ -62,7 +61,9 @@ function App() {
       <Layout>
         <Header className="header">
           <div className="leftHeader">
-            <img src={logo} alt="logo" className="logo" />
+          <a href="https:www.github.com/r0ushann">
+          <img src={logo} alt="logo" className="logo" />
+          </a>
             {isConnected && (
               <>
                 <div
@@ -80,7 +81,7 @@ function App() {
           </div>
           {isConnected ? (
             <Button type={"primary"} onClick={disconnectAndSetNull}>
-              Disconnect Wallet
+              {address}
             </Button>
           ) : (
             <Button type={"primary"} onClick={()=>{
@@ -110,7 +111,7 @@ function App() {
             
               <div className="pleaseLogin">
                 
-                please click the Connect Button to proceed!
+                please click the Connect Wallet Button to proceed!
                 <img src={con} alt="connect"/>
                
             </div>
